@@ -1,0 +1,23 @@
+:root{
+    --white: #ffffff;
+    --black: #212121;
+    --primary: #3af2beab;
+    --secoundary: #b421e6;
+    --gray: #757575;
+
+    --font-primary: "DM Serif Display", serif;
+    --fon-generic:"Zilla Slab", serif; 
+}
+
+html {
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+}
+.titulo{
+    text-align: center;
+    font-size: 3.8rem;
+    color: var(--primary);
+    font-family: var(--font-primary)
+}
