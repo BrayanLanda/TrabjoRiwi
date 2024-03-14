@@ -2,7 +2,7 @@
     --white: #ffffff;
     --black: #212121;
     --primary: #3af2beab;
-    --secoundary: #b421e6;
+    --secoundary: #77b4eabf;
     --gray: #757575;
 
     --font-primary: "DM Serif Display", serif;
@@ -20,4 +20,26 @@ body{
     font-size: 3.8rem;
     color: var(--primary);
     font-family: var(--font-primary)
+}
+/*container*/
+.container{
+    width: 100rem;
+    margin: 0 auto;
+}
+
+/*Nav principal*/
+.nav-bg{
+    background-color: var(--secoundary);
+}
+.nav-principal{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+.nav-principal a{
+    font-family: var(--font-primary);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: none;
 }
