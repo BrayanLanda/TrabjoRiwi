@@ -1,14 +1,17 @@
 :root{
     --white: #ffffff;
     --black: #212121;
-    --primary: #2bc99dab;
-    --secoundary: #77b4eabf;
+    --primary: #79afa089;
+    --secoundary: #d7e2ec3b;
     --gray: #757575;
 
     --font-primary: "DM Serif Display", serif;
     --fon-generic:"Zilla Slab", serif; 
 }
 
+body{
+    background-color: #444040f5;
+}
 html {
     font-size: 62.5%;
 }
@@ -18,7 +21,7 @@ body{
 .titulo{
     text-align: center;
     font-size: 3.8rem;
-    color: var(--primary);
+    
     font-family: var(--font-primary)
 }
 /*container*/
@@ -27,9 +30,38 @@ body{
     margin: 0 auto;
 }
 
-/*Nav principal*/
+/*Nav principal - Header*/
+
+.header-hero{
+    background-image: url('/img/hero.jpg');
+    height: 700px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.header-about{
+    background-image: url('/img/about.png');
+    height: 700px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.header-contact{
+    background-image: url('/img/contact.jpg');
+    height: 700px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 .nav-bg{
     background-color: var(--secoundary);
+    opacity: 0.9;
 }
 .nav-principal{
     display: flex;
@@ -45,13 +77,52 @@ body{
 }
 .nav-principal a{
     font-family: var(--font-primary);
-    color: var(--white);
+    color: #e1c8e8;
     font-weight: 700;
     font-size: 2rem;
     padding: 1rem;
     text-decoration: none;
 }
 .nav-principal a:hover{
-    background-color: var(--primary);
-    color: var(--black);
+    background-color: #ffffff87;
+}
+
+.test{
+    color: #c3bccc;
+}
+
+.nav-text{
+    position: absolute;
+    box-shadow: -3px 3px 78px -14px rgba(247,247,247,1);
+    bottom: -50px;
+    left: 700px;
+    width: auto;
+    height: auto;
+    color: #ffffffac;
+    justify-content: space-between;
+    align-self: flex-end;
+    background-color: #aea4b1b7;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.story-text{
+    position: absolute;
+    box-shadow: -3px 3px 78px -14px rgba(247,247,247,1);
+    top: 300px;
+    max-width: 500px;
+    height: auto;
+    color: #ffffffac;
+    text-align: center;
+    margin-left: 5rem ;
+}
+.form-contact{
+    position: absolute;
+    box-shadow: -3px 3px 78px -14px rgba(247,247,247,1);
+    top: 500px;
+    max-width: 500px;
+    height: auto;
+    color: #ffffffac;
+    text-align: center;
+    margin-left: 5rem ;
 }
