@@ -21,8 +21,8 @@ body{
 .titulo{
     text-align: center;
     font-size: 3.8rem;
-    
-    font-family: var(--font-primary)
+    font-family: var(--font-primary);
+    color: #ffffffac;
 }
 /*container*/
 .container{
@@ -125,4 +125,33 @@ body{
     color: #ffffffac;
     text-align: center;
     margin-left: 5rem ;
+}
+
+/*container cards
+==================*/
+.container-cards{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.content-card{
+    background: #9fbcbd9d;
+    padding-bottom: 2rem;
+    flex-basis: 250px;
+    max-width: 400px;
+    flex-grow: 2;
+    text-align: center;
+    color: #dbd3d3;
+    border-radius: 0.5rem;
+    box-shadow: -3px 3px 78px -14px rgb(154, 147, 147);
+}
+
+.main{
+    margin-top: 10rem;
 }
