@@ -95,12 +95,8 @@ body{
     position: absolute;
     box-shadow: -3px 3px 78px -14px rgba(247,247,247,1);
     bottom: -50px;
-    left: 700px;
-    width: auto;
-    height: auto;
+    right: 40px;
     color: #ffffffac;
-    justify-content: space-between;
-    align-self: flex-end;
     background-color: #aea4b1b7;
     text-align: center;
     border-radius: 0.5rem;
