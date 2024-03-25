@@ -29,9 +29,11 @@ body{
     max-width: 100rem;
     margin: 0 auto;
 }
+.main{
+    margin-top: 5rem;
+}
 
 /*Nav principal - Header*/
-
 .header-hero{
     background-image: url('/img/hero.jpg');
     height: 700px;
@@ -101,7 +103,14 @@ body{
     text-align: center;
     border-radius: 0.5rem;
 }
-@media (max-width: 468px){
+
+@media screen and (max-width: 480px) {
+    .story-text{
+        position: static;
+        top: 100px;
+    }
+}
+@media (max-width: 480px){
     .nav-text{
         top: 50%;
         left: 50%;
@@ -109,22 +118,17 @@ body{
         bottom: auto;
         right: auto;
     }
+    #story-text{
+        position: static;
+        margin: 10px;
+    }
+    
 }
 
 .story-text{
     position: absolute;
     box-shadow: -3px 3px 78px -14px rgba(247,247,247,1);
     top: 300px;
-    max-width: 500px;
-    height: auto;
-    color: #ffffffac;
-    text-align: center;
-    margin-left: 5rem ;
-}
-.form-contact{
-    position: absolute;
-    box-shadow: -3px 3px 78px -14px rgba(247,247,247,1);
-    top: 500px;
     max-width: 500px;
     height: auto;
     color: #ffffffac;
@@ -157,6 +161,16 @@ body{
     box-shadow: -3px 3px 78px -14px rgb(154, 147, 147);
 }
 
-.main{
-    margin-top: 10rem;
+.container-news{
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill, minmax(25rem,1fr));
+    background-color: #9fbcbd9d;
+}
+.container-news{
+    padding: 1rem;
+    background-color: #c3bccc;
+    overflow: hidden;
+
 }
