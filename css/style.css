@@ -101,6 +101,15 @@ body{
     text-align: center;
     border-radius: 0.5rem;
 }
+@media (max-width: 468px){
+    .nav-text{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 10%);
+        bottom: auto;
+        right: auto;
+    }
+}
 
 .story-text{
     position: absolute;
