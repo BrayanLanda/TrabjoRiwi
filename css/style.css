@@ -61,6 +61,15 @@ body{
     background-size: cover;
     position: relative;
 }
+.header-news{
+    background-image: url('/img/news.jpg');
+    height: 700px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 .nav-bg{
     background-color: var(--secoundary);
     opacity: 0.9;
@@ -71,12 +80,7 @@ body{
     align-items: center;
     
 }
-@media(min-width: 480px){
-    .nav-principal{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
+
 .nav-principal a{
     font-family: var(--font-primary);
     color: #e1c8e8;
@@ -104,27 +108,6 @@ body{
     border-radius: 0.5rem;
 }
 
-@media screen and (max-width: 480px) {
-    .story-text{
-        position: static;
-        top: 100px;
-    }
-}
-@media (max-width: 480px){
-    .nav-text{
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, 10%);
-        bottom: auto;
-        right: auto;
-    }
-    #story-text{
-        position: static;
-        margin: 10px;
-    }
-    
-}
-
 .story-text{
     position: absolute;
     box-shadow: -3px 3px 78px -14px rgba(247,247,247,1);
@@ -132,8 +115,9 @@ body{
     max-width: 500px;
     height: auto;
     color: #ffffffac;
-    text-align: center;
     margin-left: 5rem ;
+    border-radius: 0.5rem;
+    padding: 2rem;
 }
 
 /*container cards
@@ -164,13 +148,64 @@ body{
 .container-news{
     display: grid;
     gap: 1rem;
-    grid-auto-flow: dense;
     grid-template-columns: repeat(auto-fill, minmax(25rem,1fr));
-    background-color: #9fbcbd9d;
+    margin: 0 auto;
 }
-.container-news{
+.content-news{
     padding: 1rem;
-    background-color: #c3bccc;
+    background-color: #585555;
     overflow: hidden;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: -3px 3px 78px -14px rgb(154, 147, 147);
+    color: #f9f5f5ac;
+}
 
+
+.img-news{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    border-radius: 0.5rem;
+}
+.news-one{
+    background-image: url('/img/java.jpg');
+}
+.news-two{
+    background-image: url('/img/python.jpg');
+}
+.news-three{
+    background-image: url('/img/php.jpg');
+}
+.news-four{
+    background-image: url('/img/javascript.png');
+}
+.news-five{
+    background-image: url('/img/sql.png');
+}
+.news-six{
+    background-image: url('/img/backend.jpg');
+}
+@media (max-width: 480px){
+    .nav-text{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 10%);
+        bottom: auto;
+        right: auto;
+    }
+    #story-text{
+        position: static;
+        margin: 10px;
+    }
+    .container-news{
+        width: 90%;
+    }
+}
+@media(min-width: 480px){
+    .nav-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
