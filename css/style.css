@@ -1,9 +1,9 @@
 :root{
-    --white: #ffffff;
+    --white: #dbd3d3;
     --black: #212121;
-    --primary: #79afa089;
+    --primary: #9fbcbd9d;
     --secoundary: #d7e2ec3b;
-    --gray: #757575;
+    --gray: #aea4b1b7;
 
     --font-primary: "DM Serif Display", serif;
     --fon-generic:"Zilla Slab", serif; 
@@ -22,7 +22,7 @@ body{
     text-align: center;
     font-size: 3.8rem;
     font-family: var(--font-primary);
-    color: #ffffffac;
+    color: var(--white);
 }
 /*container*/
 .container{
@@ -32,6 +32,7 @@ body{
 .main{
     margin-top: 5rem;
 }
+
 
 /*Nav principal - Header*/
 .header-hero{
@@ -78,23 +79,22 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
-
 .nav-principal a{
     font-family: var(--font-primary);
-    color: #e1c8e8;
+    color: var(--white);
     font-weight: 700;
     font-size: 2rem;
     padding: 1rem;
     text-decoration: none;
 }
 .nav-principal a:hover{
-    background-color: #ffffff87;
+    background-color: var(--white);
+    color: var(--primary);
 }
 
 .test{
-    color: #c3bccc;
+    color: var(--white);
 }
 
 .nav-text{
@@ -102,8 +102,8 @@ body{
     box-shadow: -3px 3px 78px -14px rgba(247,247,247,1);
     bottom: -50px;
     right: 40px;
-    color: #ffffffac;
-    background-color: #aea4b1b7;
+    color: var(--white);
+    background-color: var(--gray);
     text-align: center;
     border-radius: 0.5rem;
 }
@@ -114,11 +114,12 @@ body{
     top: 300px;
     max-width: 500px;
     height: auto;
-    color: #ffffffac;
+    color: var(--white);
     margin-left: 5rem ;
     border-radius: 0.5rem;
     padding: 2rem;
 }
+
 
 /*container cards
 ==================*/
@@ -132,19 +133,21 @@ body{
     gap: 2rem;
     flex-wrap: wrap;
 }
-
 .content-card{
-    background: #9fbcbd9d;
+    background: var(--primary);
     padding-bottom: 2rem;
     flex-basis: 250px;
     max-width: 400px;
     flex-grow: 2;
     text-align: center;
-    color: #dbd3d3;
+    color: var(--white);
     border-radius: 0.5rem;
     box-shadow: -3px 3px 78px -14px rgb(154, 147, 147);
 }
 
+
+/*Container news
+===============*/
 .container-news{
     display: grid;
     gap: 1rem;
@@ -153,15 +156,13 @@ body{
 }
 .content-news{
     padding: 1rem;
-    background-color: #585555;
+    background-color: var(--primary);
     overflow: hidden;
     text-align: center;
     border-radius: 0.5rem;
     box-shadow: -3px 3px 78px -14px rgb(154, 147, 147);
-    color: #f9f5f5ac;
+    color: var(--white);
 }
-
-
 .img-news{
     background-position: center;
     background-size: cover;
@@ -187,6 +188,10 @@ body{
 .news-six{
     background-image: url('/img/backend.jpg');
 }
+
+
+/*Media Queries
+==============*/
 @media (max-width: 480px){
     .nav-text{
         top: 50%;
